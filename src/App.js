@@ -11,6 +11,7 @@ function App() {
       </NavigationTile>
       <header className="App-header">
         <img src={banner} className="App-logo" alt="logo" />
+        <h1> ROISIN PEARSON </h1>
 
 
       </header>

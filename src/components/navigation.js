@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav, NavItem, Form, FormControl, Button } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
+import Routes from "./Routes";
 
 class NavigationTile extends Component {
     render() {
@@ -11,8 +13,11 @@ class NavigationTile extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
+                        <LinkContainer to="/components/About">
+                            <NavItem>About 2</NavItem>
+                        </LinkContainer>
                         <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#About">About</Nav.Link>
+                        <Nav.Link href="#About">ABOUT</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -26,6 +31,7 @@ class NavigationTile extends Component {
                         <Button variant="outline-success">Search</Button>
                     </Form>
                 </Navbar.Collapse>
+                <Routes />
             </Navbar>
         )
     }
