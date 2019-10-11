@@ -3,10 +3,11 @@ import banner from './images/banner.png';
 import './App.css';
 import NavigationTile from "./components/navigation";
 
+
 function App() {
   return (
 
-    <div className="App">
+    <div className="ji">
       <NavigationTile>
       </NavigationTile>
       <header className="App-header">
