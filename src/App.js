@@ -1,22 +1,35 @@
 import React from 'react';
 import banner from './images/banner.png';
 import './App.css';
-import NavigationTile from "./components/navigation";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./components/About";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Navbar from 'react-bootstrap/Navbar'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
 function App() {
   return (
+<Router>
 
-    <div className="ji">
-      <NavigationTile>
-      </NavigationTile>
-      <header className="App-header">
-        <img src={banner} className="App-logo" alt="logo" />
-        <h1> ROISIN PEARSON </h1>
+          <Navbar bg="dark" variant="dark">
+              <ul className="navbar-nav mr-auto">
+                  <li><Link to={'/'} className="nav-link"> Home </Link></li>
+                  <li><Link to={'/about'} className="nav-link">About</Link></li>
+                  <li><Link to={'/contact'} className="nav-link">Contact</Link></li>
+              </ul>
+          </Navbar>
+
+          <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/about' component={About} />
+              <Route path='/contact' component={Contact} />
+          </Switch>
 
 
-      </header>
-    </div>
+
+</Router>
   );
 }
 

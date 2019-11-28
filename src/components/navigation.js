@@ -32,6 +32,7 @@ class Navigation extends React.Component {
                         <NavItem path="/" name="Work" />
                         <NavItem path="/page2" name="Play" />
                         <NavItem path="/page3" name="About"  />
+                        <Link to="/about">About</Link>
 
 
                     </ul>
@@ -41,17 +42,6 @@ class Navigation extends React.Component {
                     </form>
                 </div>
             </nav>
-                <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/users">
-                        <Users />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
             </Router>
         )
     }
