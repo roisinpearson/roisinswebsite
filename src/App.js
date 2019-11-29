@@ -1,7 +1,8 @@
 import React from 'react';
 import banner from './images/banner.png';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 import About from "./components/About";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -13,7 +14,7 @@ function App() {
   return (
 <Router>
 
-          <Navbar bg="dark" variant="dark">
+          <Navbar bg="dark" variant="dark" className="navbar">
               <ul className="navbar-nav mr-auto">
                   <li><Link to={'/'} className="nav-link"> Home </Link></li>
                   <li><Link to={'/about'} className="nav-link">About</Link></li>
