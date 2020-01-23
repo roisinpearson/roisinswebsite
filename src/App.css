@@ -22,7 +22,31 @@ h1 {
 .describe {
   background-color: #02132B;
   height: 300px;
-  margin-top: 5%;
+  margin-top: 2%;
+}
+
+.describe h3, p  {
+  margin-top: 1%;
+  color: #fff
+}
+
+img {
+  object-fit: cover;
+  position: relative;
+  height: 100%;
+
+}
+
+.images {
+  width: 950px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+
+.options {
+  margin-top: 1%;
 }
 
 .about {

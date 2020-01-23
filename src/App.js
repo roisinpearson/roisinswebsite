@@ -1,10 +1,10 @@
 import React from 'react';
-import banner from './images/banner.png';
+import banner from './components/images/banner.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import About from "./components/About";
-import Home from "./components/Home";
+import { Home } from "./components/Home";
 import Contact from "./components/Contact";
 import Navbar from 'react-bootstrap/Navbar'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -27,10 +27,8 @@ function App() {
               <Route path='/about' component={About} />
               <Route path='/contact' component={Contact} />
           </Switch>
-
-
-
 </Router>
+
   );
 }
 
