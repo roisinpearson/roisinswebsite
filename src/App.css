@@ -1,14 +1,12 @@
-
 body {
   /*background-color: #02132B;*/
-  font-family: 'Muli', sans-serif
+  font-family: "Muli", sans-serif;
 }
 
 h1 {
   margin-top: 50px;
   font-size: 5em;
 }
-
 
 .App-link {
   color: #61dafb;
@@ -20,21 +18,21 @@ h1 {
 }
 
 .describe {
-  background-color: #02132B;
+  background-color: #02132b;
   height: 300px;
   margin-top: 2%;
 }
 
-.describe h3, p  {
+.describe h3,
+p {
   margin-top: 1%;
-  color: #fff
+  color: #fff;
 }
 
 img {
   object-fit: cover;
   position: relative;
   height: 100%;
-
 }
 
 .images {
@@ -42,8 +40,6 @@ img {
   height: 600px;
   object-fit: cover;
 }
-
-
 
 .options {
   margin-top: 1%;
@@ -53,6 +49,14 @@ img {
   margin-top: 10%;
 }
 
+.about-heading {
+  color: #fff;
+}
+
 .navbar {
-  background-color: #02132B;
+  background-color: #02132b;
+}
+
+#main {
+  height: 100vh;
 }
