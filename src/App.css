@@ -45,7 +45,8 @@ img {
   margin-top: 1%;
 }
 
-.about {
+.about,
+.contact {
   margin-top: 10%;
 }
 
@@ -59,4 +60,9 @@ img {
 
 #main {
   height: 100vh;
+}
+
+.socials {
+  margin: 5px;
+  margin-left: 10px;
 }

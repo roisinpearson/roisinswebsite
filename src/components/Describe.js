@@ -13,21 +13,20 @@ class Describe extends Component {
             </div>
           </Col>
         </Row>
-          <div className="options">
-            <Row className="justify-content-md-center">
-
-              <div className="col-3 text-center">
-                <p> Design</p>
-              </div>
-              <div className="col-3 text-center">
-                <p> Code </p>
-              </div>
-              <div className="col-3 text-center">
-                <p> Both! </p>
-              </div>
-
-            </Row>
-          </div>
+        <div className="options">
+          <Row className="justify-content-md-center">
+            <div className="col-3 text-center">
+              <p> Design</p>
+              <span class="fas fa-camera"></span>
+            </div>
+            <div className="col-3 text-center">
+              <p> Code </p>
+            </div>
+            <div className="col-3 text-center">
+              <p> Both! </p>
+            </div>
+          </Row>
+        </div>
       </div>
     );
   }
