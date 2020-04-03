@@ -36,8 +36,10 @@ img {
 }
 
 .images {
-  width: 950px;
-  height: 600px;
+  width: 110vh;
+  height: 75vh;
+  padding-left: 0%;
+  padding-right: 0%;
   object-fit: cover;
 }
 
@@ -48,6 +50,7 @@ img {
 .about,
 .contact {
   margin-top: 10%;
+  padding-bottom: 10%;
 }
 
 .about-heading {
@@ -58,9 +61,9 @@ img {
   background-color: #02132b;
 }
 
-#main {
+/* #main {
   height: 100vh;
-}
+} */
 
 .socials {
   margin: 5px;
