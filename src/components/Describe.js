@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import Col from "react-bootstrap/esm/Col";
 
 class Describe extends Component {
@@ -16,14 +16,14 @@ class Describe extends Component {
         <div className="options">
           <Row className="justify-content-md-center">
             <div className="col-3 text-center">
-              <p> Design</p>
+              <Button variant="link">Design</Button>
               <span class="fas fa-camera"></span>
             </div>
             <div className="col-3 text-center">
-              <p> Code </p>
+              <Button variant="link">Code</Button>
             </div>
             <div className="col-3 text-center">
-              <p> Both! </p>
+              <Button variant="link">Both!</Button>
             </div>
           </Row>
         </div>
